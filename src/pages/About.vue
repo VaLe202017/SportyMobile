@@ -124,7 +124,7 @@ const initDeviceOrientation = () => {
 onMounted(() => {
   const script = document.createElement("script");
   script.src =
-    "https://maps.googleapis.com/maps/api/js?key=AIzaSyD4R1WJfB5ex9nMQxcNfVHj9xv_wODzYR4&libraries=&v=weekly";
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyAA1jdIClaBpIVxfBjDMj65BVojM87x1TY&libraries=&v=weekly";
   script.async = true;
   script.onload = () => {
     console.log("Google Maps API successfully loaded!");
