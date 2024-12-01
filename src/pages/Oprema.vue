@@ -30,11 +30,6 @@
           {{ "Najbolja oprema za golf." }}
         </div>
       </q-carousel-slide>
-      <q-carousel-slide name="4" img-src="../assets/nogomet_oprema.jpg">
-        <div class="q-mt-md text-center" style="padding-top: 65%; font-size: 20px; color: white">
-          {{ "Najbolja oprema za nogomet." }}
-        </div>
-      </q-carousel-slide>
     </q-carousel>
   </div>
 </template>
@@ -45,8 +40,7 @@ import { ref } from 'vue'
 export default {
   setup () {
     return {
-      slide: ref('style'),
-      lorem: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptatem totam, architecto cupiditate officia rerum, error dignissimos praesentium libero ab nemo.'
+      slide: ref(1),
     }
   }
 }
