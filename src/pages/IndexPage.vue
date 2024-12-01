@@ -1,9 +1,9 @@
 <template>
   <q-page class="flex flex-center">
     <div class="column items-center">
-      <img alt="Quasar logo" src="" style="width: 225px; height: 75px" />
+      <img alt="Logo" src="../assets/logo.jpg" style="width: 400px; height: 300px" />
       <div>
-        <h1>{{ $t("name") }}</h1>
+        
       </div>
     </div>
   </q-page>

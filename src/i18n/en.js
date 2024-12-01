@@ -10,4 +10,6 @@ export default {
   settingsPage: "Settings Page",
   description2: "Check Veleri web page",
   contact: "Contact",
+  tereni: "Sport fields",
+  oprema: "Sport equipment"
 };
