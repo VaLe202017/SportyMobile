@@ -1,21 +1,6 @@
 <template>
   <div class="q-pa-md" style="max-width: 400px">
     <q-form class="q-gutter-md">
-      <!--
-      <q-input
-        filled
-        type = "date"
-        v-model="datum_iznajmljivanja"
-        label="Datum_iznajmljivanja"
-      />
-
-      <q-input
-        filled
-        type= "date"
-        v-model="datum_vracanja"
-        label="Datum_vracanja"
-      />
-      -->
       <q-input
         filled
         type="number"
