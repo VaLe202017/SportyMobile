@@ -16,18 +16,18 @@
       class="bg-purple text-white shadow-1 rounded-borders"
     >
       <q-carousel-slide :name="1" img-src="../assets/kosarka_oprema.jpg">
-        <div class="q-mt-md text-center" style="padding-top: 65%; font-size: 20px; color: black">
-          {{ "Najbolja oprema za kosarku." }}
+        <div class="q-mt-md text-left" style="padding-top: 45%; font-size: 20px; color: black">
+          <strong>OPREMA ZA KOSARKU</strong>
         </div>
       </q-carousel-slide>
       <q-carousel-slide name="2" img-src="../assets/tenis_oprema.jpg">
-        <div class="q-mt-md text-center" style="padding-top: 65%; font-size: 20px; color: black">
-          {{ "Najbolja oprema za tenis." }}
+        <div class="q-mt-md text-left" style="padding-top: 45%; font-size: 20px; color: black">
+          <strong>OPREMA ZA TENIS</strong>
         </div>
       </q-carousel-slide>
       <q-carousel-slide name="3" img-src="../assets/golf_oprema.jpg">
-        <div class="q-mt-md text-center" style="padding-top: 65%; font-size: 20px; color: white">
-          {{ "Najbolja oprema za golf." }}
+        <div class="q-mt-md text-left" style="padding-top: 45%; font-size: 20px; color: whitesmoke">
+          <strong>OPREMA ZA GOLF</strong>
         </div>
       </q-carousel-slide>
     </q-carousel>

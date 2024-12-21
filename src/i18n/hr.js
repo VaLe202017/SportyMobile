@@ -11,4 +11,5 @@ export default {
   contact: "Kontakt",
   tereni: "Tereni",
   oprema: "Oprema",
+  unos: "Unos"
 };

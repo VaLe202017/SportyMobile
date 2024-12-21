@@ -30,6 +30,9 @@
         <q-item to="/about" clickable>
           <q-item-section> {{ $t("about") }} </q-item-section>
         </q-item>
+        <q-item to="/unos" clickable>
+          <q-item-section> {{ $t("unos") }} </q-item-section>
+        </q-item>
         <q-item to="/settings" clickable>
           <q-item-section> {{ $t("settings") }} </q-item-section>
         </q-item>

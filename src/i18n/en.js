@@ -11,5 +11,6 @@ export default {
   description2: "Check Veleri web page",
   contact: "Contact",
   tereni: "Sport fields",
-  oprema: "Sport equipment"
+  oprema: "Sport equipment",
+  unos: "Input"
 };
