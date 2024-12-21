@@ -59,44 +59,38 @@ export default {
   name: "MainLayout",
   data() {
     return {
-      isOnline: navigator.onLine, // Početni status mreže
+      isOnline: navigator.onLine,
     };
   },
   mounted() {
-    // Postavljanje event listenera za promjenu mrežnog statusa
     window.addEventListener("online", this.handleNetworkChange);
     window.addEventListener("offline", this.handleNetworkChange);
 
-    // Prikazujemo početni status mreže kao notifikaciju
     this.notifyNetworkStatus();
   },
   beforeUnmount() {
-    // Uklanjamo event listenere kad komponenta nije prikazana
     window.removeEventListener("online", this.handleNetworkChange);
     window.removeEventListener("offline", this.handleNetworkChange);
   },
   methods: {
     handleNetworkChange() {
-      // Ažuriranje statusa mreže i prikazivanje obavijesti
       this.isOnline = navigator.onLine;
       this.notifyNetworkStatus();
     },
     notifyNetworkStatus() {
       if (this.isOnline) {
-        // Prikazuje notifikaciju za ponovno uspostavljenu vezu
         Notify.create({
           type: "positive",
           message: "Internet connection retrieved.",
           icon: "wifi",
-          timeout: 2000, // Notifikacija nestaje nakon 2 sekunde
+          timeout: 2000,
         });
       } else {
-        // Prikazuje notifikaciju za gubitak veze
         Notify.create({
           type: "negative",
           message: "Internet connection lost.",
           icon: "wifi_off",
-          timeout: 0, // Notifikacija ostaje dok korisnik ponovno ne bude online
+          timeout: 0,
           actions: [{ label: "OK", color: "white" }],
         });
       }
