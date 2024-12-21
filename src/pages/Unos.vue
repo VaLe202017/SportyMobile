@@ -67,15 +67,15 @@ export default {
   methods: {
     async insertFacility() {
       const formData = {
-        "Sifra korisnika": this.sifra_korisnika,
-        "Datum iznajmljivanja": this.datum_iznajmljivanja,
-        "Datum vracanja": this.datum_vracanja,
-        "Ukupan iznos": this.ukupan_iznos,
+        sifra_korisnika: this.sifra_korisnika,
+        datum_iznajmljivanja: this.datum_iznajmljivanja,
+        datum_vracanja: this.datum_vracanja,
+        ukupan_iznos: this.ukupan_iznos,
       };
       await axios
         .post("http://localhost:3000/api/narudzbe/", formData)
         .then((result) => {
-          console.log(result.data);
+          console.log(result.data.data);
         })
         .catch((error) => {
           console.error(error);
