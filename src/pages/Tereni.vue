@@ -1,34 +1,13 @@
 <template>
   <div class="q-pa-md">
-    <q-carousel animated v-model="slide" arrows navigation infinite>
-      <q-carousel-slide :name="1" img-src="../assets/golfTeren.jpg">
-        <div
-          class="q-mt-md text-center"
-          style="padding-top: 45%; font-size: 20px; color: white"
-        >
-          <strong>GOLF TERENI</strong>
-          <p>Nudimo široki asortiman golf terena</p>
-        </div>
-      </q-carousel-slide>
-      <q-carousel-slide :name="2" img-src="../assets/kosarkaTeren.jpg">
-        <div
-          class="q-mt-md text-center"
-          style="padding-top: 45%; font-size: 20px; color: white"
-        >
-          <strong>KOŠARKAŠKI TERENI</strong>
-          <p>Nudimo široki asortiman košarkaških terena</p>
-        </div>
-      </q-carousel-slide>
-      <q-carousel-slide :name="3" img-src="../assets/tenisTeren.jpg">
-        <div
-          class="q-mt-md text-center"
-          style="padding-top: 45%; font-size: 20px; color: white"
-        >
-          <strong>TENISKI TERENI</strong>
-          <p>Nudimo široki asortiman teniskih terena</p>
-        </div>
-      </q-carousel-slide>
-    </q-carousel>
+    <div class="container">
+      <div class="kosarka">Košarka</div>
+      <div class="stolni">Stolni tenis</div>
+      <div class="tenis">Tenis</div>
+      <div class="badminton">Badminton</div>
+      <div class="yoga">Yoga/aerobic</div>
+      <div></div>
+    </div>
   </div>
 </template>
 
@@ -43,3 +22,43 @@ export default {
   },
 };
 </script>
+
+<style>
+.container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+.container > div{
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-size: cover;
+}
+.kosarka{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  background-image: url(../assets/kosarka.jpg);
+}
+.stolni{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  background-image: url(../assets/stolni.jpg);
+}
+.tenis{
+  grid-column-start: 3;
+  grid-column-end: 3;
+  background-image: url(../assets/tenis.jpg);
+}
+.badminton{
+  grid-column-start: 4;
+  grid-column-end: 4;
+  background-image: url(../assets/badminton.jpg);
+}
+.yoga{
+  grid-column-start: 4;
+  grid-column-end: 4;
+  background-image: url(../assets/yoga.jpg);
+}
+</style>
