@@ -1,16 +1,11 @@
 <template>
   <q-page class="flex flex-center">
-    <div class="column items-center">
-      <img alt="Logo" src="../assets/logo.jpg" style="width: 400px; height: 300px" />
-      <div>
-        
-      </div>
-    </div>
+    <img alt="Logo" src="~assets/logo.jpg" style="padding: 1%; object-fit: contain; height: 80%; width: 80%;" />
   </q-page>
 </template>
 
-<style scoped>
-h1 {
-  color: #1976d2;
-}
-</style>
+<script setup>
+defineOptions({
+  name: "IndexPage",
+});
+</script>
