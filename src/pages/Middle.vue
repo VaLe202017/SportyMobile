@@ -101,7 +101,7 @@
             ></q-img>
           </q-card-section>
           <q-card-actions align="center">
-            <q-btn flat label="Yoga/fitnes" color="primary" href="https://rezervacije.rijekasport.hr/rezervacija/?sport=yoga" target="_blank" />
+            <q-btn flat label="Yoga/aerobik" color="primary" href="https://rezervacije.rijekasport.hr/rezervacija/?sport=yoga" target="_blank" />
           </q-card-actions>
         </q-card>
       </div>
